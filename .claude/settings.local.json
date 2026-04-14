@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/shuig/hokkaido-zititai/北海道 -mindepth 3 -name \"*.md\" -type f -exec bash -c 'mv \"$1\" \"$\\(dirname \"$\\(dirname \"$1\"\\)\"\\)/$\\(basename \"$1\"\\)\"' _ {} \\\\;)",
+      "Bash(find /c/Users/shuig/hokkaido-zititai/北海道 -mindepth 2 -type d -empty -delete)",
+      "Bash(grep -h \"| メール |\" /c/Users/shuig/hokkaido-zititai/北海道/*/*.md)",
+      "Bash(grep -rl \"@\" /c/Users/shuig/hokkaido-zititai/北海道/*/*.md)",
+      "Bash(grep:*)"
+    ]
+  }
+}
